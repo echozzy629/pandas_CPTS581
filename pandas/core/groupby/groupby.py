@@ -1572,8 +1572,7 @@ class GroupBy(_GroupBy[FrameOrSeries]):
         for i in sample:
             sample_keys.append(dictionary_keys[i])
         sample_dictionary={key: value for key, value in groups_dictionary.items() if key in sample_keys}
-
-        return(sample_dictionary)
+        return sample_dictionary
 
 
 
