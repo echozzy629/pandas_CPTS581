@@ -4676,7 +4676,7 @@ Several caveats.
 
 * Duplicate column names and non-string columns names are not supported.
 * The ``pyarrow`` engine always writes the index to the output, but ``fastparquet`` only writes non-default
-  indexes. This extra column can cause problems for non-Pandas consumers that are not expecting it. You can
+  indexes. This extra column can cause problems for non-pandas consumers that are not expecting it. You can
   force including or omitting indexes with the ``index`` argument, regardless of the underlying engine.
 * Index level names, if specified, must be strings.
 * In the ``pyarrow`` engine, categorical dtypes for non-string types can be serialized to parquet, but will de-serialize as their primitive dtype.
