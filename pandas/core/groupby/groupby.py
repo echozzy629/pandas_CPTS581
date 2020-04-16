@@ -1539,7 +1539,7 @@ class GroupBy(_GroupBy[FrameOrSeries]):
         if(size==len(groups_dictionary) or frac ==1):
             raise Warning("Random sample equals to the given groupbt: the inplut size is the same as the size of the input group")
 
-        if weights is not None:
+        if weights:
             #weights is a list
             if(len(weights) != len(groups_dictionary.keys())):
                 raise ValueError("Weights and axis to be sampled must be the same length")
